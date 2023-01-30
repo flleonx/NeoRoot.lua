@@ -30,7 +30,6 @@ function M.apply_change()
     else -- CUR_MODE == BLUE_PILL
       vim.cmd('cd ' .. PROJ_ROOT)
     end
-    print(vim.fn.getcwd() .. ' (cwd = ' .. (CUR_MODE == RED_PILL and 'file' or 'proj-root') .. ')')
   end
 end
 
